@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     background-color: #e3f2fd;
@@ -8,20 +8,20 @@ body {
 
 .navbar {
     background: #1565c0;
-    padding: 15px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px black;
 }
 
 .logo {
-    height: 150px;
+    height: 140px;
 }
 
 .nav-options {
     display: flex;
-    gap: 20px;
+    gap: 60px;
 }
 
 .nav-item {
@@ -35,7 +35,7 @@ body {
     color: #ffeb3b;
 }
 
-.btn {
+.buttonThing {
     background: #0d47a1;
     color: white;
     border: none;
