@@ -1,1 +1,5 @@
-Sign in will replace sign in option with your desired username
+-Sign in will replace sign in option with your desired username
+-Alert when Nest L is detected
+-Schedules will show mock time tables
+-Tickets will show prices
+-About
