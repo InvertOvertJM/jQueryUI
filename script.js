@@ -1,4 +1,8 @@
 let signedOn = false;
+let username;
+let password;
+let from;
+let to;
 
 
 $(document).ready(function() {
@@ -10,17 +14,16 @@ $(document).ready(function() {
             $(this).css("color", "white");
         }
     );
-
-    $(function() {
         $("#datepicker").datepicker();
-    });
 
-    $( function() {
-        $( "#progressbar" ).progressbar({
-          value: 20
-        });
+        $( "#progress-bar1" ).progressbar({
+          value: 0
       } );
 
-      
+      $( "#progress-bar2" ).progressbar({
+        value: 0
+    } );
+
+    $( "#dialog" ).dialog();
 });
 

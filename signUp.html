@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up - Warp Corporation</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="navbar">
+        <img src="Wcorp.webp" class="logo">
+        <div class="nav-options">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="#" class="nav-item">Schedules</a>
+            <a href="#" class="nav-item">Tickets</a>
+            <a href="#" class="nav-item">About</a>
+            <a href="#" class="nav-item">Support</a>
+        </div>
+        <a href="signIn.html" class="buttonThing" id="sign-in-btn">Sign In</a>
+    </div>
 <div class="signin-container">
     <h2>Sign Up</h2>
     <div class="input-group">
@@ -22,12 +37,14 @@
         <label for="new-password">Password</label>
         <input type="password" id="new-password" placeholder="Enter Password" />
     </div>
-    <div id="progress-bar">
-        <div class="ui-progressbar-value"></div>
-    </div>
+    <div id="progress-bar2"></div>
     <button id="sign-up-btn">Sign Up</button>
     <p>Already have an account? <a href="signIn.html">Sign In</a></p>
 </div>
+
+<div id="dialog" title="Basic dialog">
+    <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+  </div>
 
 </body>
 </html>
