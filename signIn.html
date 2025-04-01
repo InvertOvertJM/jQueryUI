@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warp Corporation</title>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+    <title>Sign In - Warp Corporation</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="navbar">
-        <img src="Wcorp.webp"class="logo">
+        <img src="Wcorp.webp" class="logo">
         <div class="nav-options">
             <a href="index.html" class="nav-item">Home</a>
             <a href="#" class="nav-item">Schedules</a>
@@ -21,10 +19,25 @@
             <a href="#" class="nav-item">About</a>
             <a href="#" class="nav-item">Support</a>
         </div>
-        <a href="signIn.html" class="buttonThing">Sign In</a>
+        <a href="signIn.html" class="buttonThing" id="nav-signin">Sign In</a>
     </div>
 
-    <div id="progressbar"></div>
+    <div class="signin-container">
+        <h2>Sign In</h2>
+        <div id="progress-bar"></div>
+        <div class="input-group">
+            <input type="text" id="username" placeholder="Username">
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" placeholder="Password">
+        </div>
+        <button id="sign-in-btn">Sign In</button>
+        <p>Don't have an account? <a href="signUp.html">Sign Up</a></p>
+    </div>
 
+    <!-- jQuery UI Dialog -->
+    <div id="error-dialog" title="Error" style="display:none;">
+        <p>Incorrect username or password. Please try again.</p>
+    </div>
 </body>
 </html>

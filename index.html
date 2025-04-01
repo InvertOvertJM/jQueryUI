@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warp Corporation</title>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="styles.css">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="navbar">
-        <img src="Wcorp.webp"class="logo">
+        <img src="Wcorp.webp" class="logo">
         <div class="nav-options">
             <a href="index.html" class="nav-item">Home</a>
             <a href="#" class="nav-item">Schedules</a>
@@ -21,74 +21,81 @@
             <a href="#" class="nav-item">About</a>
             <a href="#" class="nav-item">Support</a>
         </div>
-        <a href="signIn.html" class="buttonThing">Sign In</a>
+        <a href="signIn.html" class="buttonThing" id="sign-in-btn">Sign In</a>
     </div>
 
     <div class="search-container">
-        <label>From: 
-            <select id="from">
-                <option value="" disabled selected>Select a Nest</option>
-                <option value="Nest A">Nest A</option>
-                <option value="Nest B">Nest B</option>
-                <option value="Nest C">Nest C</option>
-                <option value="Nest D">Nest D</option>
-                <option value="Nest E">Nest E</option>
-                <option value="Nest F">Nest F</option>
-                <option value="Nest G">Nest G</option>
-                <option value="Nest H">Nest H</option>
-                <option value="Nest I">Nest I</option>
-                <option value="Nest J">Nest J</option>
-                <option value="Nest K">Nest K</option>
-                <option value="Nest L">Nest L</option>
-                <option value="Nest M">Nest M</option>
-                <option value="Nest N">Nest N</option>
-                <option value="Nest O">Nest O</option>
-                <option value="Nest P">Nest P</option>
-                <option value="Nest Q">Nest Q</option>
-                <option value="Nest R">Nest R</option>
-                <option value="Nest S">Nest S</option>
-                <option value="Nest T">Nest T</option>
-                <option value="Nest U">Nest U</option>
-                <option value="Nest V">Nest V</option>
-                <option value="Nest W">Nest W</option>
-                <option value="Nest X">Nest X</option>
-                <option value="Nest Y">Nest Y</option>
+        <form>
+            <div class="search-fields">
+                <label for="from">From: 
+                    <select id="from" name="from">
+                        <option value="" disabled selected>Select a Nest</option>
+                        <option value="Nest A">Nest A</option>
+                        <option value="Nest B">Nest B</option>
+                        <option value="Nest C">Nest C</option>
+                        <option value="Nest D">Nest D</option>
+                        <option value="Nest E">Nest E</option>
+                        <option value="Nest F">Nest F</option>
+                        <option value="Nest G">Nest G</option>
+                        <option value="Nest H">Nest H</option>
+                        <option value="Nest I">Nest I</option>
+                        <option value="Nest J">Nest J</option>
+                        <option value="Nest K">Nest K</option>
+                        <option value="Nest L">Nest L</option>
+                        <option value="Nest M">Nest M</option>
+                        <option value="Nest N">Nest N</option>
+                        <option value="Nest O">Nest O</option>
+                        <option value="Nest P">Nest P</option>
+                        <option value="Nest Q">Nest Q</option>
+                        <option value="Nest R">Nest R</option>
+                        <option value="Nest S">Nest S</option>
+                        <option value="Nest T">Nest T</option>
+                        <option value="Nest U">Nest U</option>
+                        <option value="Nest V">Nest V</option>
+                        <option value="Nest W">Nest W</option>
+                        <option value="Nest X">Nest X</option>
+                        <option value="Nest Y">Nest Y</option>
+                    </select>
+                </label>
 
-            </select>
-        </label>
-        
-        <label>To: 
-            <select id="to">
-                <option value="" disabled selected>Select a Nest</option>
-                <option value="Nest A">Nest A</option>
-                <option value="Nest B">Nest B</option>
-                <option value="Nest C">Nest C</option>
-                <option value="Nest D">Nest D</option>
-                <option value="Nest E">Nest E</option>
-                <option value="Nest F">Nest F</option>
-                <option value="Nest G">Nest G</option>
-                <option value="Nest H">Nest H</option>
-                <option value="Nest I">Nest I</option>
-                <option value="Nest J">Nest J</option>
-                <option value="Nest K">Nest K</option>
-                <option value="Nest L">Nest L</option>
-                <option value="Nest M">Nest M</option>
-                <option value="Nest N">Nest N</option>
-                <option value="Nest O">Nest O</option>
-                <option value="Nest P">Nest P</option>
-                <option value="Nest Q">Nest Q</option>
-                <option value="Nest R">Nest R</option>
-                <option value="Nest S">Nest S</option>
-                <option value="Nest T">Nest T</option>
-                <option value="Nest U">Nest U</option>
-                <option value="Nest V">Nest V</option>
-                <option value="Nest W">Nest W</option>
-                <option value="Nest X">Nest X</option>
-                <option value="Nest Y">Nest Y</option>
-            </select>
-        </label>
-        <label>Departure Date: <input type="text" id="datepicker"></label>
-        <button class="buttonThing">Search</button>
+                <label for="to">To: 
+                    <select id="to" name="to">
+                        <option value="" disabled selected>Select a Nest</option>
+                        <option value="Nest A">Nest A</option>
+                        <option value="Nest B">Nest B</option>
+                        <option value="Nest C">Nest C</option>
+                        <option value="Nest D">Nest D</option>
+                        <option value="Nest E">Nest E</option>
+                        <option value="Nest F">Nest F</option>
+                        <option value="Nest G">Nest G</option>
+                        <option value="Nest H">Nest H</option>
+                        <option value="Nest I">Nest I</option>
+                        <option value="Nest J">Nest J</option>
+                        <option value="Nest K">Nest K</option>
+                        <option value="Nest L">Nest L</option>
+                        <option value="Nest M">Nest M</option>
+                        <option value="Nest N">Nest N</option>
+                        <option value="Nest O">Nest O</option>
+                        <option value="Nest P">Nest P</option>
+                        <option value="Nest Q">Nest Q</option>
+                        <option value="Nest R">Nest R</option>
+                        <option value="Nest S">Nest S</option>
+                        <option value="Nest T">Nest T</option>
+                        <option value="Nest U">Nest U</option>
+                        <option value="Nest V">Nest V</option>
+                        <option value="Nest W">Nest W</option>
+                        <option value="Nest X">Nest X</option>
+                        <option value="Nest Y">Nest Y</option>
+                    </select>
+                </label>
+
+                <label for="datepicker">Departure Date: 
+                    <input type="text" id="datepicker" name="datepicker">
+                </label>
+            </div>
+
+            <button type="submit" class="buttonThing">Search</button>
+        </form>
     </div>
 
     <div class="promo">
@@ -101,19 +108,43 @@
 
     <div class="content">
         <div class="map">
-            <img src="City_map.webp">
+            <img src="City_map.webp" alt="City Map">
         </div>
         <div class="info">
             <div class="header">The Warp Train</div>
             <div class="text">Top of the line seats for comfort. Will be completely worth the seconds you'll be on!</div>
         </div>
         <div class="image">
-            <img src="inside.webp">
+            <img src="inside.webp" alt="Inside the Train">
         </div>
         <div class="info">
             <div class="header">The Map</div>
             <div class="text">###########-3--13-413###</div>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function() {
+            if (localStorage.getItem("username")) {
+                // If the user is logged in, update the navbar
+                $("#sign-in-btn").replaceWith(`
+                    <div class="dropdown">
+                        <span class="nav-username">${localStorage.getItem("username")}</span>
+                        <div class="dropdown-content">
+                            <a href="#" id="sign-out-btn">Sign Out</a>
+                        </div>
+                    </div>
+                `);
+
+                // Handle sign out
+                $("#sign-out-btn").click(function() {
+                    localStorage.removeItem("username");
+                    localStorage.removeItem("email");
+                    localStorage.removeItem("password");
+                    window.location.href = "index.html"; // Reload to reset the sign-in button
+                });
+            }
+        });
+    </script>
 </body>
 </html>
